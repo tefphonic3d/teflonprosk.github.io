@@ -4,8 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 145;
 const currentFrame = index => (
-  `file:///Users/teffic/Sites/teflonprosk.github.io/images/
-${index.toString().padStart(4, '0')}.jpg`
+  `images/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
