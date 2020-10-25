@@ -2,7 +2,7 @@ const html = document.documentElement;
 const canvas = document.getElementById("images");
 const context = canvas.getContext("2d");
 
-const frameCount = 145;
+const frameCount = 146;
 const currentFrame = index => (
   `images/${index.toString().padStart(4, '0')}.jpg`
 )
@@ -16,8 +16,8 @@ const preloadImages = () => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=1080;
-canvas.height=1436;
+canvas.width=750;
+canvas.height=1140;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
