@@ -2,7 +2,7 @@ const html = document.documentElement;
 const canvas = document.getElementById("images");
 const context = canvas.getContext("2d");
 
-const frameCount = 146;
+const frameCount = 211;
 const currentFrame = index => (
   `images/${index.toString().padStart(5, '0')}.jpg`
 )
